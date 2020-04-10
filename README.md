@@ -9,4 +9,18 @@ This repository is a library based off of the DogeCV computer vision for FTC. Do
 This library is based off of the DogeCV library that will change every year for each new game. Since it is not bare OpenCV code, we save you time because you will not need to code your own detectors again for each years game. The way we accomplish this is by organizing each years game into a branch. Once a new game begins, we will merge the new code into the repository. If you need to access past years game code, just check out it's branch in Branches. **Current Branch: Skystone**
 
 ## Getting Started
-If you are using OnBot Java, download or copy the files in the team code folder and upload them to your OnBot Java project. For Android Studio users, either clone or download this repository and open it in Android studio, or copy the code files into your team's Android Studio project. You will also need a file for your robot phone for DogeCV to work in order to use the detector for your camera. You can copy and paste this file from [here] into your phones folder on your computer. Good luck!
+If you are using OnBot Java, download or copy the files in the team code folder and upload them to your OnBot Java project. For Android Studio users, either clone or download this repository and open it in Android studio, or copy the code files into your team's Android Studio project. You will also need a file for your robot phone for DogeCV to work in order to use the detector for your camera. You can copy and paste this file from [here] into your phones folder on your computer. The next thing you will need to do is add the dependencies to your project.
+
+1. Go to the root `build.gradle`
+2. To the repositories section, add the lines 
+```groovy
+allprojects {
+  repositories {
+    maven { url 'https://jitpack.io' } // this line!
+  }
+}
+```
+3. Add the line `implementation 'com.github.dogecv:dogecv:2020.4-alpha'` to TeamCode's `build.release.gradle`, inside the dependencies block
+4. Press the `Sync Now` button that should appear in the top right
+
+
