@@ -9,7 +9,7 @@ This repository is a library based off of the DogeCV computer vision for FTC. Do
 This library is based off of the DogeCV library that will change every year for each new game. Since it is not bare OpenCV code, we save you time because you will not need to code your own detectors again for each years game. The way we accomplish this is by organizing each years game into a branch. Once a new game begins, we will merge the new code into the repository. If you need to access past years game code, just check out it's branch in Branches. **Current Branch: Skystone**
 
 ## Getting Started
-Clone or download this repository and open it in Android studio, or copy the code files into your team's Android Studio project. You will also need a file for your robot phone for DogeCV to work in order to use the detector for your camera. You can copy and paste this file from [here] into your phones folder on your computer. *If you are copying code files into your own android studio project, you will need to follow the steps below for adding dependencies.*
+Clone or download this repository and open it in Android studio, or copy the code files into your team's Android Studio project. You will also need a file for your robot phone for DogeCV to work in order to use the detector for your camera. You can copy and paste this file from [here](https://github.com/AlessioToniolo/DogeCV-Quickstart/blob/Skystone/libOpenCvNative.so) into your phones folder on your computer. *If you are copying code files into your own android studio project, you will need to follow the steps below for adding dependencies.*
 
 ### Adding Dependencies
 1. Go to the root `build.gradle`
